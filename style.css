@@ -38,7 +38,8 @@ header {
     align-items: center;
     height: 80px;
     padding: 0px 30px;
-    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
     top: 0;
 }
 
@@ -81,6 +82,9 @@ header {
     height: 25px;
     padding: 2px;
 }
+
+/* Hero------------------------------------------------ */
+
 
 #hero {
     margin-top: 70px;
@@ -139,6 +143,9 @@ header {
     padding: 20px;
 }
 
+/* Cards------------------------------------------------------ */
+
+
 #info {
     padding: 70px 0;
     display: flex;
@@ -159,4 +166,134 @@ header {
     text-align: center;
     font-size: 16px;
     width: 70%;
+}
+
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-card {
+    width: 400px;
+    height: 300px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--ver-cla);
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.info-card h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--bg-nav);
+}
+
+.info-card p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-white);
+}
+
+.info-card img {
+    height: 80px;
+}
+
+/* Footer----------------------------------------------------------------- */
+
+footer {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: var(--bg-nav);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.caja-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.caja-footer .logo-footer img {
+    width: 190px;
+}
+
+.caja-footer .suscribe {
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+input, button {
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: var(--ver-osc);
+  color: #ffffff;
+}
+
+.caja-footer h2 {
+    margin-bottom: 30px;
+    color: #cfcfcf;
+    font-weight: 700;
+}
+
+.caja-footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.caja-footer a:hover {
+    opacity: .8;
+}
+
+.caja-footer a .icn {
+    width: 17px;
+    color: #7a7a7a;
+
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.copyright span {
+    font-weight: 800;
+}
+
+.copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+#menu-toggle, .menu-label {
+    display: none;
 }

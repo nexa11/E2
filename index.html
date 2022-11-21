@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Nexa Diseños </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
 </head>
 <body>
     <header>
         <img src="./img/NEXA-LOGO.png" alt="Logo nexa" class="logo">
         <nav class="navbar">
             <ul class="navbar-list">
+
+                <label for="menu-toggle" class="menu-label">
+                    <img src="./img/menu-g.svg" alt="" />
+                </label>
+                <input id="menu-toggle" type="checkbox" />
+
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Clientes</a></li>
+                <li><a href="#">Proyectos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
             <div class="discord">
@@ -48,7 +56,67 @@
                 comercial o domiciliario. Sabemos materializar tus ideas o proyectos 
                 de una manera rápida y productiva. Desde validaciones hasta 
                 mantenimiento industrial.</p>
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <img src="./img/solu.svg" alt="impresora">
+                    <h3>Paso a paso de una Impresión 3D</h3>
+                    <p>Te explicamos brevemente como es el proceso para hacer cualquier impresión 3D, desde el Diseño 3D hasta la Fabricación 3D.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <img src="./img/impre.svg" alt="impresora">
+                    <h3>¿No dispones de tus piezas diseñadas en 3D? ¡No te preocupes!</h3>
+                    <p>Escribinos que hacemos todo por vos. Diseñamos en 3D tus piezas u objetos desde cero. Optimizamos Diseño 3D para impresión 3D. Somos especialistas en Diseño para manufactura.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <img src="./img/paso.svg" alt="impresora">
+                    <h3>Soluciones en 3D</h3>
+                    <p>Sabemos como ayudarte a fabricar tus piezas en 3D. Ponemos a disposición nuestra granja de impresión 3D para hacer grandes o pequeñas cantidades de piezas en 3D. Trabajamos con las mejores materias primas del mercado.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="caja-footer">
+                <div class="logo-footer">
+                    <img src="./img/NEXA-LOGO.png" alt="">
+                </div>
+                <div class="suscribe">
+                    <div>
+                        <input type="email" placeholder="Ingresa tu email" />
+                        <button type="submit">Suscribite</button>
+                     </div>
+                </div>
+            </div>
+            <div class="caja-footer">
+                <h2>Soluciones</h2>
+                <a href="#">Desarrollo</a>
+                <a href="#">Marketing</a>
+                <a href="#">Mail</a>
+                <a href="#">Whatsapp</a>
+            </div>
+            <div class="caja-footer">
+                <h2>Empresa</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>
+            </div>
+            <div class="caja-footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <img src="./img/facebook.png" alt="Facebook" class="icn"> Facebook</a>
+                <a href="#"> <img src="./img/instagram.png" alt="Instagram" class="icn"> Instagram</a>
+                <a href="#"> <img src="./img/linkedin.png" alt="Linkedin" class="icn"> Linkedin</a>
+                <a href="#"> <img src="./img/discordfo.png" alt="Discord" class="icn"> Discord</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2022 <span>Nexa Diseños 3D</span></p>
+        </div>
+    </footer>
 </body>
 </html>
